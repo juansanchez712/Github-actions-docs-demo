@@ -23,7 +23,7 @@ name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
-  check-bats-version:
+  check-angular-version:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -31,4 +31,4 @@ jobs:
         with:
           node-version: '14'
       - run: npm install -g @angular/cli
-      - run: ng version
+      - run: ng --version
